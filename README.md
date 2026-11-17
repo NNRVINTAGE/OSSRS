@@ -79,7 +79,3 @@ streamlit run app.py
 ```
 
 See [documentation.md](documentation.md) for the complete `128 × 128` preprocessing pipeline, the `8,119`-dimensional hybrid descriptor (`HOG + Hu Moments + Geometric Features`), threshold parameters in `config/settings.py`, and directory layout.
-
-## Workspace Archive Note
-
-Alongside the application source code, the repository root contains supporting directories and artifacts used for compiling the final course report (`MAIN_PROMPT.md`, `00_INPUTS/`, `00_PROJECT_CONTEXT/`, `01_REFERENCES/`, `02_PROMPTS/`, `03_WORKFLOW/`, `04_EVIDENCE/`, `05_OUTPUTS/`, `06_FINAL/`, and `07_REVIEW/`).
