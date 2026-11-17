@@ -1,0 +1,21 @@
+# Virtual Environment & Python Cache
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+Knowledge/
+
+Dataset/full_org/*
+!Dataset/full_org/original_1_*.png
+!Dataset/full_org/original_2_*.png
+!Dataset/full_org/original_3_*.png
+!Dataset/full_org/original_4_*.png
+!Dataset/full_org/original_5_*.png
+Dataset/full_forg/*
+!Dataset/full_forg/forgeries_1_*.png
+!Dataset/full_forg/forgeries_2_*.png
+!Dataset/full_forg/forgeries_3_*.png
+!Dataset/full_forg/forgeries_4_*.png
+!Dataset/full_forg/forgeries_5_*.png
