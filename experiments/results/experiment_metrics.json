@@ -1,0 +1,170 @@
+{
+  "E1": {
+    "name": "E1: HOG + Cosine",
+    "description": "Baseline HOG stroke orientation features matched with Cosine Similarity",
+    "val_accuracy": 0.569811320754717,
+    "val_eer": 0.26594202898550723,
+    "val_auc": 0.8144927536231884,
+    "test_accuracy": 0.6566037735849056,
+    "test_precision": 0.5794701986754967,
+    "test_recall": 0.7608695652173914,
+    "test_f1": 0.6578947368421053,
+    "test_far": 0.42333333333333334,
+    "test_frr": 0.2391304347826087,
+    "test_eer": 0.30934782608695655,
+    "test_auc": 0.7371014492753623,
+    "top1_id_accuracy": 0.6260869565217392,
+    "unknown_rejection": 0.26666666666666666,
+    "inference_time_ms": 0.5017570827318275,
+    "confusion_matrix": [
+      [
+        173,
+        127
+      ],
+      [
+        55,
+        175
+      ]
+    ]
+  },
+  "E2": {
+    "name": "E2: HOG + Hu + Cosine",
+    "description": "HOG local stroke patterns combined with Hu Moments global shape features",
+    "val_accuracy": 0.5528301886792453,
+    "val_eer": 0.4340579710144928,
+    "val_auc": 0.6014347826086957,
+    "test_accuracy": 0.5849056603773585,
+    "test_precision": 0.5132978723404256,
+    "test_recall": 0.8391304347826087,
+    "test_f1": 0.636963696369637,
+    "test_far": 0.61,
+    "test_frr": 0.1608695652173913,
+    "test_eer": 0.34942028985507245,
+    "test_auc": 0.7023623188405798,
+    "top1_id_accuracy": 0.17391304347826086,
+    "unknown_rejection": 0.1,
+    "inference_time_ms": 0.4379656003869098,
+    "confusion_matrix": [
+      [
+        117,
+        183
+      ],
+      [
+        37,
+        193
+      ]
+    ]
+  },
+  "E3": {
+    "name": "E3: Full Features + Linear SVM",
+    "description": "Pairwise [|diff|, prod, cosine] with Linear SVM classifier",
+    "val_accuracy": 0.6886792452830188,
+    "val_eer": 0.3208695652173913,
+    "val_auc": 0.733268115942029,
+    "test_accuracy": 0.7283018867924528,
+    "test_precision": 0.7067307692307693,
+    "test_recall": 0.6391304347826087,
+    "test_f1": 0.6712328767123288,
+    "test_far": 0.20333333333333334,
+    "test_frr": 0.36086956521739133,
+    "test_eer": 0.28898550724637684,
+    "test_auc": 0.769876811594203,
+    "top1_id_accuracy": 0.5347826086956522,
+    "unknown_rejection": 0.11666666666666667,
+    "inference_time_ms": 703.6707256151283,
+    "confusion_matrix": [
+      [
+        239,
+        61
+      ],
+      [
+        83,
+        147
+      ]
+    ]
+  },
+  "E4": {
+    "name": "E4: Full Features + RBF SVM",
+    "description": "Pairwise [|diff|, prod, cosine] with Non-linear RBF SVM classifier",
+    "val_accuracy": 0.4339622641509434,
+    "val_eer": 0.41702898550724643,
+    "val_auc": 0.6022608695652174,
+    "test_accuracy": 0.5679245283018868,
+    "test_precision": 0.5013623978201635,
+    "test_recall": 0.8,
+    "test_f1": 0.6164154103852596,
+    "test_far": 0.61,
+    "test_frr": 0.2,
+    "test_eer": 0.3522463768115942,
+    "test_auc": 0.6924782608695652,
+    "top1_id_accuracy": 0.004347826086956522,
+    "unknown_rejection": 0.0,
+    "inference_time_ms": 1565.8462607342265,
+    "confusion_matrix": [
+      [
+        117,
+        183
+      ],
+      [
+        46,
+        184
+      ]
+    ]
+  },
+  "E5": {
+    "name": "E5: Best Model Without Augmentation (E3)",
+    "description": "",
+    "val_accuracy": 0.6886792452830188,
+    "val_eer": 0.3208695652173913,
+    "val_auc": 0.733268115942029,
+    "test_accuracy": 0.7283018867924528,
+    "test_precision": 0.7067307692307693,
+    "test_recall": 0.6391304347826087,
+    "test_f1": 0.6712328767123288,
+    "test_far": 0.20333333333333334,
+    "test_frr": 0.36086956521739133,
+    "test_eer": 0.28898550724637684,
+    "test_auc": 0.769876811594203,
+    "top1_id_accuracy": 0.5347826086956522,
+    "unknown_rejection": 0.11666666666666667,
+    "inference_time_ms": 703.6707256151283,
+    "confusion_matrix": [
+      [
+        239,
+        61
+      ],
+      [
+        83,
+        147
+      ]
+    ]
+  },
+  "E6": {
+    "name": "E6: E3 with Geometric Augmentation",
+    "description": "Training/Calibration enriched with rotation, scaling, translation, and mild shear variations",
+    "val_accuracy": 0.6773584905660377,
+    "val_eer": 0.3357246376811594,
+    "val_auc": 0.7164710144927537,
+    "test_accuracy": 0.7264150943396226,
+    "test_precision": 0.6995305164319249,
+    "test_recall": 0.6478260869565218,
+    "test_f1": 0.672686230248307,
+    "test_far": 0.21333333333333335,
+    "test_frr": 0.3521739130434783,
+    "test_eer": 0.29065217391304343,
+    "test_auc": 0.7819202898550726,
+    "top1_id_accuracy": 0.5608695652173913,
+    "unknown_rejection": 0.16666666666666666,
+    "inference_time_ms": 747.5021901337997,
+    "confusion_matrix": [
+      [
+        236,
+        64
+      ],
+      [
+        81,
+        149
+      ]
+    ]
+  }
+}
